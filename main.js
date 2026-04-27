@@ -186,17 +186,4 @@ modal.addEventListener('touchend', e => {
   }
 });
 
-// ── Booking Form (demo) ───────────────────────
-document.getElementById('bookingForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const btn = e.target.querySelector('[type=submit]');
-  btn.innerHTML = '<span>Message Envoyé ✦</span>';
-  btn.style.borderColor = '#C9A96E';
-  btn.style.color = '#C9A96E';
-  setTimeout(() => {
-    btn.innerHTML = '<span>Send Inquiry</span><span class="btn__arrow" aria-hidden="true">↗</span>';
-    btn.style.borderColor = '';
-    btn.style.color = '';
-    e.target.reset();
-  }, 3000);
-});
+// ── Booking Form (removed) ───────────────────────

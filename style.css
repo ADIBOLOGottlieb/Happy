@@ -161,20 +161,12 @@ body:has(.measures__image:hover) .cursor{width:60px;height:60px}
 .marquee__sep{color:var(--gold);font-size:.7rem}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-/* ═══════ BOOKING ═══════ */
+/* ═══════ CONTACT ═══════ */
 .booking{flex-direction:column;justify-content:center;align-items:center;padding:var(--nav-h) clamp(1.5rem,5vw,4rem) 4rem}
-.booking__inner{width:100%;max-width:640px;text-align:center}
+.booking__inner{width:100%;max-width:800px;text-align:center}
 .booking__title{font-family:var(--ff-title);font-size:clamp(2.2rem,5vw,4rem);font-weight:400;margin-bottom:.5rem}
 .booking__sub{font-size:.7rem;letter-spacing:.15em;color:var(--muted);margin-bottom:3rem}
-.booking__form{text-align:left}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-group{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.2rem}
-label{font-family:var(--ff-mono);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
-input,textarea{background:transparent;border:none;border-bottom:1px solid var(--border);color:var(--ivory);font-family:var(--ff-mono);font-size:.8rem;padding:.6rem 0;width:100%;transition:border-color .3s;resize:none;outline:none}
-input::placeholder,textarea::placeholder{color:var(--muted)}
-input:focus,textarea:focus{border-bottom-color:var(--gold)}
-.booking__actions{display:flex;justify-content:center;margin-top:2.5rem;margin-bottom:2.5rem}
-.booking__direct{display:flex;flex-direction:column;align-items:center;gap:.8rem;padding-top:2rem;border-top:1px solid var(--border)}
+.booking__direct{display:flex;flex-direction:column;align-items:center;gap:1.5rem;padding-top:1rem}
 .direct-link{font-family:var(--ff-title);font-style:italic;font-size:1.15rem;transition:color .3s}
 .direct-link:hover{color:var(--gold)}
 
@@ -230,7 +222,6 @@ input:focus,textarea:focus{border-bottom-color:var(--gold)}
   .portfolio__grid{grid-template-columns:1fr;grid-auto-rows:260px}
   .portfolio__item--tall,.portfolio__item--wide{grid-column:span 1;grid-row:span 1}
   .hero__name{font-size:clamp(2.8rem,14vw,6rem)}
-  .form-row{grid-template-columns:1fr}
 }
 @media(max-width:375px){
   .hero__name{font-size:2.8rem}

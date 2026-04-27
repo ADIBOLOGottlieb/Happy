@@ -319,41 +319,14 @@
         <h2 class="booking__title"><em>Me Contacter</em></h2>
         <p class="booking__sub">Éditorial · Commercial · Défilé · Digitals</p>
 
-        <form class="booking__form" id="bookingForm" novalidate aria-label="Formulaire de demande de réservation">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">Nom</label>
-              <input id="fname" type="text" name="name" placeholder="Votre nom" required aria-required="true" autocomplete="name" />
-            </div>
-            <div class="form-group">
-              <label for="femail">Email</label>
-              <input id="femail" type="email" name="email" placeholder="votre@email.com" required aria-required="true" autocomplete="email" />
-            </div>
+        <div class="booking__direct" style="padding-top:1rem; border-top:none; display:flex; flex-direction:column; gap:2rem; align-items:center;">
+          <a href="mailto:misshappy@gmail.com" class="direct-link" style="font-size: clamp(1.5rem, 4vw, 2.5rem); font-style: normal;" aria-label="Envoyer un email">misshappy@gmail.com</a>
+          <div style="display:flex;gap:3rem;justify-content:center;">
+            <a href="https://instagram.com/happygazozo" target="_blank" rel="noopener noreferrer" class="direct-link" aria-label="Instagram">Instagram</a>
+            <a href="https://tiktok.com/@happygazozo" target="_blank" rel="noopener noreferrer" class="direct-link" aria-label="TikTok">TikTok</a>
           </div>
-          <div class="form-group">
-            <label for="fproject">Type de projet</label>
-            <input id="fproject" type="text" name="project" placeholder="Éditorial / Campagne / Défilé…" />
-          </div>
-          <div class="form-group">
-            <label for="fmessage">Message</label>
-            <textarea id="fmessage" name="message" rows="4" placeholder="Parlez-moi de votre projet…" required aria-required="true"></textarea>
-          </div>
-          <div class="booking__actions">
-            <button type="submit" class="btn btn--gold" aria-label="Envoyer la demande de réservation">
-              <span>Envoyer</span>
-              <span class="btn__arrow" aria-hidden="true">↗</span>
-            </button>
-          </div>
-        </form>
-
-        <div class="booking__direct">
-          <a href="mailto:misshappy@gmail.com" class="direct-link" aria-label="Envoyer un email">misshappy@gmail.com</a>
-          <div style="display:flex;gap:2rem;justify-content:center;margin-top:0.5rem">
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="direct-link" aria-label="Instagram">Instagram</a>
-            <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" class="direct-link" aria-label="TikTok">TikTok</a>
-          </div>
-          <a href="https://wa.me/22899199800" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" aria-label="Contacter sur WhatsApp">
-            +228 99 19 98 00
+          <a href="https://wa.me/22899199800" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" style="margin-top:0.5rem;" aria-label="Contacter sur WhatsApp">
+            WhatsApp : +228 99 19 98 00
           </a>
         </div>
       </div>
