@@ -98,12 +98,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // ── Portfolio Modal ───────────────────────────
 const portfolioData = [
-  { cat: 'Editorial', title: 'Session 01', desc: 'Clean editorial shoot — natural light, raw emotion, high contrast.' },
-  { cat: 'Commercial', title: 'Session 02', desc: 'Brand campaign work showcasing versatility and commercial appeal.' },
-  { cat: 'Beauty', title: 'Session 03', desc: 'Close-up beauty study — skin, texture, and expressive eyes.' },
-  { cat: 'Streetwear', title: 'Session 04', desc: 'Urban streetwear editorial set in the city.' },
-  { cat: 'Runway', title: 'Session 05', desc: 'Backstage and runway moments from international fashion weeks.' },
-  { cat: 'Editorial', title: 'Session 06', desc: 'High-fashion editorial exploring silhouette and form.' },
+  { cat: 'Éditorial', title: 'Séance 01', desc: 'Shoot éditorial épuré — lumière naturelle, émotion brute, contraste fort.' },
+  { cat: 'Commercial', title: 'Séance 02', desc: 'Campagne commerciale mettant en valeur la polyvalence et l\'élégance naturelle.' },
+  { cat: 'Beauté', title: 'Séance 03', desc: 'Étude beauté en gros plan — peau, texture et regard expressif.' },
+  { cat: 'Mode Urbaine', title: 'Séance 04', desc: 'Éditorial mode urbaine en extérieur, dans les rues de Lomé.' },
+  { cat: 'Défilé', title: 'Séance 05', desc: 'Coulisses et moments de défilés lors d\'événements mode locaux.' },
+  { cat: 'Éditorial', title: 'Séance 06', desc: 'Éditorial haute mode explorant la silhouette et la forme.' },
 ];
 const imagesSrc = [
   '/images/image-2.jpeg',
@@ -190,7 +190,7 @@ modal.addEventListener('touchend', e => {
 document.getElementById('bookingForm').addEventListener('submit', e => {
   e.preventDefault();
   const btn = e.target.querySelector('[type=submit]');
-  btn.innerHTML = '<span>Message Sent ✦</span>';
+  btn.innerHTML = '<span>Message Envoyé ✦</span>';
   btn.style.borderColor = '#C9A96E';
   btn.style.color = '#C9A96E';
   setTimeout(() => {
