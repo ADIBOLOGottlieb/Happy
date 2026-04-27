@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Happy GAZOZO — International Fashion Model. Editorial, Commercial & Runway." />
+  <meta name="theme-color" content="#0D0D0D" />
+  <title>Happy GAZOZO — International Fashion Model</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Cormorant:ital,wght@0,300;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true" id="cursor"></div>
+  <div class="cursor-dot" aria-hidden="true" id="cursorDot"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════════ -->
+  <header class="nav" id="nav" role="banner">
+    <a href="#hero" class="nav__brand" aria-label="Happy GAZOZO – Home">
+      <span class="nav__brand-first">Happy</span>
+      <span class="nav__brand-last">Gazozo</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Main navigation">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#portfolio" class="nav__link">Portfolio</a>
+      <a href="#measures" class="nav__link">Stats</a>
+      <a href="#clients" class="nav__link">Clients</a>
+      <a href="#booking" class="nav__link nav__link--cta">Booking</a>
+    </nav>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu" aria-modal="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#about"     class="mobile-menu__link" data-close-menu>About</a>
+      <a href="#portfolio" class="mobile-menu__link" data-close-menu>Portfolio</a>
+      <a href="#measures"  class="mobile-menu__link" data-close-menu>Stats</a>
+      <a href="#clients"   class="mobile-menu__link" data-close-menu>Clients</a>
+      <a href="#booking"   class="mobile-menu__link" data-close-menu>Booking</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 1 — HERO
+    ════════════════════════════════════════════════════════ -->
+    <section class="section hero" id="hero" aria-label="Hero">
+      <div class="hero__image-wrap">
+        <img
+          src="/images/image-1.jpeg"
+          alt="Happy GAZOZO — Fashion Model"
+          class="hero__image"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" aria-label="International Fashion Model">
+          International&ensp;Model
+        </p>
+        <h1 class="hero__name">
+          <span class="hero__name-first">Happy</span>
+          <span class="hero__name-last"><em>Gazozo</em></span>
+        </h1>
+        <p class="hero__sub">Taille 1.80m &nbsp;·&nbsp; Paris / Dakar</p>
+        <a href="#portfolio" class="btn btn--ghost hero__cta" aria-label="View Portfolio">
+          View Portfolio
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 2 — ABOUT
+    ════════════════════════════════════════════════════════ -->
+    <section class="section about" id="about" aria-label="About Happy GAZOZO">
+      <div class="about__image-col">
+        <img
+          src="/images/image-2.jpeg"
+          alt="Happy GAZOZO editorial portrait"
+          class="about__image"
+          loading="lazy"
+        />
+      </div>
+      <div class="about__text-col">
+        <div class="about__text-inner reveal">
+          <p class="label">The Model</p>
+          <h2 class="about__title">A Face<br /><em>Undefined</em></h2>
+          <p class="about__body">
+            Happy GAZOZO is an international fashion model whose striking silhouette and effortless presence have graced the lenses of award-winning photographers across Paris, Milan and Dakar.
+          </p>
+          <p class="about__body">
+            Her 1.80m frame carries both strength and elegance — a rare combination that makes her equally at home in haute couture runways and raw editorial shoots.
+          </p>
+          <a href="#booking" class="btn btn--outline" aria-label="Book Happy GAZOZO">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 3 — PORTFOLIO
+    ════════════════════════════════════════════════════════ -->
+    <section class="section portfolio" id="portfolio" aria-label="Portfolio Gallery">
+      <div class="portfolio__header">
+        <p class="label">Selected Works</p>
+        <h2 class="portfolio__title"><em>Portfolio</em></h2>
+      </div>
+
+      <div class="portfolio__grid" role="list">
+
+        <article class="portfolio__item reveal" role="listitem" style="--delay:0">
+          <button class="portfolio__btn" data-index="0" aria-label="Open image: Editorial 01">
+            <div class="portfolio__img-wrap">
+              <img src="/images/image-2.jpeg" alt="Editorial shoot 01" loading="lazy" />
+            </div>
+            <div class="portfolio__hover-overlay" aria-hidden="true">
+              <p class="portfolio__hover-cat">Editorial</p>
+              <p class="portfolio__hover-title">01</p>
+            </div>
+          </button>
+        </article>
+
+        <article class="portfolio__item portfolio__item--tall reveal" role="listitem" style="--delay:1">
+          <button class="portfolio__btn" data-index="1" aria-label="Open image: Commercial 02">
+            <div class="portfolio__img-wrap">
+              <img src="/images/image-3.jpeg" alt="Commercial shoot 02" loading="lazy" />
+            </div>
+            <div class="portfolio__hover-overlay" aria-hidden="true">
+              <p class="portfolio__hover-cat">Commercial</p>
+              <p class="portfolio__hover-title">02</p>
+            </div>
+          </button>
+        </article>
+
+        <article class="portfolio__item reveal" role="listitem" style="--delay:2">
+          <button class="portfolio__btn" data-index="2" aria-label="Open image: Beauty 03">
+            <div class="portfolio__img-wrap">
+              <img src="/images/image-4.jpeg" alt="Beauty shoot 03" loading="lazy" />
+            </div>
+            <div class="portfolio__hover-overlay" aria-hidden="true">
+              <p class="portfolio__hover-cat">Beauty</p>
+              <p class="portfolio__hover-title">03</p>
+            </div>
+          </button>
+        </article>
+
+        <article class="portfolio__item portfolio__item--wide reveal" role="listitem" style="--delay:1">
+          <button class="portfolio__btn" data-index="3" aria-label="Open image: Streetwear 04">
+            <div class="portfolio__img-wrap">
+              <img src="/images/image-5.jpeg" alt="Streetwear shoot 04" loading="lazy" />
+            </div>
+            <div class="portfolio__hover-overlay" aria-hidden="true">
+              <p class="portfolio__hover-cat">Streetwear</p>
+              <p class="portfolio__hover-title">04</p>
+            </div>
+          </button>
+        </article>
+
+        <article class="portfolio__item reveal" role="listitem" style="--delay:0">
+          <button class="portfolio__btn" data-index="4" aria-label="Open image: Runway 05">
+            <div class="portfolio__img-wrap">
+              <img src="/images/image-6.jpeg" alt="Runway 05" loading="lazy" />
+            </div>
+            <div class="portfolio__hover-overlay" aria-hidden="true">
+              <p class="portfolio__hover-cat">Runway</p>
+              <p class="portfolio__hover-title">05</p>
+            </div>
+          </button>
+        </article>
+
+        <article class="portfolio__item portfolio__item--tall reveal" role="listitem" style="--delay:2">
+          <button class="portfolio__btn" data-index="5" aria-label="Open image: Editorial 06">
+            <div class="portfolio__img-wrap">
+              <img src="/images/image-7.jpeg" alt="Editorial 06" loading="lazy" />
+            </div>
+            <div class="portfolio__hover-overlay" aria-hidden="true">
+              <p class="portfolio__hover-cat">Editorial</p>
+              <p class="portfolio__hover-title">06</p>
+            </div>
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 4 — MEASURES
+    ════════════════════════════════════════════════════════ -->
+    <section class="section measures" id="measures" aria-label="Model Measurements">
+      <div class="measures__image-col">
+        <img
+          src="/images/image-3.jpeg"
+          alt="Happy GAZOZO full body shot"
+          class="measures__image"
+          loading="lazy"
+        />
+      </div>
+      <div class="measures__table-col">
+        <div class="measures__inner reveal">
+          <p class="label">Data Sheet</p>
+          <h2 class="measures__title"><em>Measurements</em></h2>
+          <table class="measures__table" aria-label="Model stats and measurements">
+            <tbody>
+              <tr><td class="m-label">Height</td>   <td class="m-value">1.80m <span class="m-sub">/ 5'11"</span></td></tr>
+              <tr><td class="m-label">Bust</td>     <td class="m-value">82cm <span class="m-sub">/ 32"</span></td></tr>
+              <tr><td class="m-label">Waist</td>    <td class="m-value">60cm <span class="m-sub">/ 24"</span></td></tr>
+              <tr><td class="m-label">Hips</td>     <td class="m-value">89cm <span class="m-sub">/ 35"</span></td></tr>
+              <tr><td class="m-label">Shoe</td>     <td class="m-value">39 EU <span class="m-sub">/ 8 US</span></td></tr>
+              <tr><td class="m-label">Hair</td>     <td class="m-value">Black</td></tr>
+              <tr><td class="m-label">Eyes</td>     <td class="m-value">Brown</td></tr>
+              <tr><td class="m-label">Skin</td>     <td class="m-value">Deep Ebony</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 5 — RUNWAY / VIDEO (fallback image if no video)
+    ════════════════════════════════════════════════════════ -->
+    <section class="section runway" id="runway" aria-label="Runway Experience">
+      <div class="runway__bg">
+        <img src="/images/image-5.jpeg" alt="" role="presentation" class="runway__fallback" loading="lazy" />
+      </div>
+      <div class="runway__overlay" aria-hidden="true"></div>
+      <div class="runway__content reveal">
+        <p class="label" style="--label-color:#C9A96E">Experience</p>
+        <h2 class="runway__title">Runway &<br /><em>Collaborations</em></h2>
+        <ul class="runway__list" aria-label="Runway and collaboration highlights">
+          <li>Fashion Week · Paris &amp; Milan</li>
+          <li>Editorial · Vogue Africa concept</li>
+          <li>Campaign · Luxury Fragrance</li>
+          <li>Show · Emerging Designers Collective</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 6 — CLIENTS / LOGOS MARQUEE
+    ════════════════════════════════════════════════════════ -->
+    <section class="section clients" id="clients" aria-label="Brand Collaborations">
+      <div class="clients__header reveal">
+        <p class="label">Collaborations</p>
+        <h2 class="clients__title"><em>Trusted By</em></h2>
+      </div>
+      <div class="marquee" aria-label="Brands and clients list">
+        <div class="marquee__track">
+          <span class="marquee__item">Vogue</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">L'Oréal Paris</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">H&amp;M Studio</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Zara Editorial</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Diesel</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">LVMH</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Marie Claire</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Fenty Beauty</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <!-- duplicate for seamless loop -->
+          <span class="marquee__item">Vogue</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">L'Oréal Paris</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">H&amp;M Studio</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Zara Editorial</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Diesel</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">LVMH</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Marie Claire</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+          <span class="marquee__item">Fenty Beauty</span>
+          <span class="marquee__sep" aria-hidden="true">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 7 — BOOKING
+    ════════════════════════════════════════════════════════ -->
+    <section class="section booking" id="booking" aria-label="Book Happy GAZOZO">
+      <div class="booking__inner reveal">
+        <p class="label">Availability</p>
+        <h2 class="booking__title"><em>Book the Muse</em></h2>
+        <p class="booking__sub">Editorial · Commercial · Runway · Digitals</p>
+
+        <form class="booking__form" id="bookingForm" novalidate aria-label="Booking inquiry form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input id="fname" type="text" name="name" placeholder="Your Name" required aria-required="true" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input id="femail" type="email" name="email" placeholder="your@email.com" required aria-required="true" autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fproject">Project Type</label>
+            <input id="fproject" type="text" name="project" placeholder="Editorial / Campaign / Runway…" />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="4" placeholder="Tell me about your project…" required aria-required="true"></textarea>
+          </div>
+          <div class="booking__actions">
+            <button type="submit" class="btn btn--gold" aria-label="Send booking inquiry">
+              <span>Send Inquiry</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="booking__direct">
+          <a href="mailto:booking@happygazozo.com" class="direct-link" aria-label="Email Happy GAZOZO">booking@happygazozo.com</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="direct-link" aria-label="Instagram">@happygazozo</a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" aria-label="Contact on WhatsApp">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <p class="footer__brand">Happy Gazozo</p>
+    <p class="footer__copy">&copy; <span id="year"></span> — All rights reserved</p>
+    <p class="footer__made">International Fashion Model</p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PORTFOLIO MODAL
+  ════════════════════════════════════════════════════════ -->
+  <div class="modal" id="portfolioModal" role="dialog" aria-modal="true" aria-label="Portfolio Image" aria-hidden="true">
+    <button class="modal__close" id="modalClose" aria-label="Close modal">&times;</button>
+    <div class="modal__inner">
+      <div class="modal__image-side">
+        <img src="" alt="" class="modal__image" id="modalImage" />
+      </div>
+      <div class="modal__info-side">
+        <p class="modal__cat label" id="modalCat"></p>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+        <div class="modal__nav">
+          <button class="modal__arrow" id="modalPrev" aria-label="Previous image">←</button>
+          <button class="modal__arrow" id="modalNext" aria-label="Next image">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal__backdrop" id="modalBackdrop" aria-hidden="true"></div>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
