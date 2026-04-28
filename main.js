@@ -106,12 +106,12 @@ const portfolioData = [
   { cat: 'Éditorial', title: 'Séance 06', desc: 'Éditorial haute mode explorant la silhouette et la forme.' },
 ];
 const imagesSrc = [
-  '/images/image-2.jpeg',
-  '/images/image-3.jpeg',
-  '/images/image-4.jpeg',
-  '/images/image-5.jpeg',
-  '/images/image-6.jpeg',
-  '/images/image-7.jpeg',
+  'images/image-2.jpeg',
+  'images/image-3.jpeg',
+  'images/image-4.jpeg',
+  'images/image-5.jpeg',
+  'images/image-6.jpeg',
+  'images/image-7.jpeg',
 ];
 
 const modal         = document.getElementById('portfolioModal');
